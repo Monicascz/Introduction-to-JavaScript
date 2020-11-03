@@ -18,7 +18,11 @@ Do the following:
    HINT: no function required
 */
 
+var votingAge = 28;
 
+if (votingAge >= 18){
+  console.log(true)
+}
 
 /*
 Task 1b - Values
@@ -58,10 +62,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+return a*b;
   }
-
+console.log(multiply(a,b));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
