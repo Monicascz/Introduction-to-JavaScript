@@ -18,15 +18,16 @@ Do the following:
    HINT: no function required
 */
 
-var votingAge = 19;
+ const votingAge = 19;
 
 if (votingAge >= 18){
 console.log(true);
 } else {
-  console.log(false);
+console.log(false);
 }
 
 /*
+
 Task 1b - Values
 
 Do the following:   
@@ -60,6 +61,7 @@ Do the following:
 var stringOne="1999";
 
 Number(stringOne);
+console.log(stringOne);
 
 
 /*
@@ -120,26 +122,28 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(dogAge, dogWeight){
-    if (dogAge >1 && dogWeight<=5){
-      return (dogWeight * 5)/100;
-    }else if (dogAge>=1 && dogWeight<=10){
-      return (dogWeight * 4)/100;
-    }else if(dogAge>1 && dogWeight<=15){
-      return (dogWeight * 3)/100;
-    }
-    else if(dogAge>1 && dogWeight>15){
-      return (dogWeight * 2)/100;
-    }else if(dogAge<=.3333){
-      return (dogWeight * 10)/100;
-    }
-    else if(dogAge<=.58333){
-      return (dogWeight * 5)/100;
-    }else if(dogAge<1){
-      return (dogWeight * 4)/100;
-    }
-  }
-hungryDog(2,8)
+function hungryDog(weight, dogAge){
+  if(dogAge<=.3333){
+    return (weight * .10);
+  }else if(dogAge<=.58333){
+    return (weight * .05);
+  }else if(dogAge<1){
+    return (weight * .04);
+  } else if (dogAge >=1 && weight<=5){
+    return (weight * .05);
+ }else if (dogAge>=1 && weight<=10){
+    return (weight * .04);
+ }else if(dogAge>=1 && weight<=15){
+    return (weight * .03);
+ }else if(dogAge>=1 && weight>15){
+    return (weight * .02);
+}else if(dogAge<=.3333){
+    return (weight * .05);
+}else if(dogAge<1){
+    return (weight * .04);
+}
+}
+hungryDog(15,1)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -171,12 +175,12 @@ function game(user, computer){
      computer= "scissors";
    }
    if (computer === user){
-     return "It's a tie!";
+     return "it's a tie";
    }
    else if (user ==="rock" && computer ==="scissors" || user ==="paper" && computer ==="rock" || user ==="scissors" && computer ==="paper"){
-     return "You win! Hooray!"
+     return "you win!"
    }else if (user ==="rock" && computer ==="paper" || user ==="paper" && computer ==="scissors" || user ==="scissors" && computer ==="rock"){
-    return "Womp, womp. You lose."
+    return "you lose!"
   }
 }
 game("rock",Math.random());
@@ -194,7 +198,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-    return (kilometers* .621371)+"miles";
+    return (kilometers* .621371);
   }
 miles(3);
 
@@ -207,10 +211,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(centimeters){
+  return (centimeters / 30.48);
   }
- 
+ feet(5);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -223,9 +227,16 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong(){
+  var bottlesNumber;
+for (bottlesNumber=5; bottlesNumber>=5; bottlesNumber--){
+  return bottlesNumber + " bottles of soda on the wall, " + bottlesNumber + " bottles of soda, take one down pass it around " + (bottlesNumber-1) +" bottles of soda on the wall";
+  return bottlesNumber-1;
+}
+}annoyingSong()
+
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -243,9 +254,23 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
-  }
+function grade(score){
+    if (score >= 90 && score<=100){
+      return "you got a A";
+    }
+    else if (score >= 80 && score<90){
+      return "you got a B";
+    }
+    else if (score >= 70 && score<80){
+      return "you got a C";
+    }
+    else if (score >= 60 && score<70){
+      return "you got a D";
+    }
+    else if (score<60){
+      return "you got a F";
+    }
+  } grade(78);
   
   
   
