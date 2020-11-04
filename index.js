@@ -160,11 +160,26 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+let computer=Math.random;
 
 function game(user, computer){
-    /*add your code here*/
+   if (computer <= .333){
+     computer= "rock";
+   } else if (computer <=.666){
+     computer= "paper";
+   } else if (computer <=1){
+     computer= "scissors";
+   }
+   if (computer === user){
+     return "It's a tie!";
+   }
+   else if (user ==="rock" && computer ==="scissors" || user ==="paper" && computer ==="rock" || user ==="scissors" && computer ==="paper"){
+     return "You win! Hooray!"
+   }else if (user ==="rock" && computer ==="paper" || user ==="paper" && computer ==="scissors" || user ==="scissors" && computer ==="rock"){
+    return "Womp, womp. You lose."
+  }
 }
-  
+game("rock",Math.random());
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
