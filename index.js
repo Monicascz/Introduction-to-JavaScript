@@ -193,10 +193,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilometers){
+    return (kilometers* .621371)+"miles";
   }
-
+miles(3);
 
 
 //Task 5b - Feet to CM
