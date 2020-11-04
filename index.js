@@ -18,10 +18,10 @@ Do the following:
    HINT: no function required
 */
 
-var votingAge = 28;
+var votingAge = 19;
 
 if (votingAge >= 18){
-  console.log(true)
+console.log(true)
 }
 
 /*
@@ -29,15 +29,20 @@ Task 1b - Values
 
 Do the following:   
    1. Declare two variables and assign them values
-   2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
+   2. Use a conditional to change the value of the 1st variable 
+   based on the value assigned to the 2nd variable
    3. Return the new value of the 1st variable
 
    HINT: no function required
 */
+let varOne = 5
+let varTwo = 10
 
+if (varOne < 9){
+  varOne = 11;
+}
 
-
-
+console.log(varOne);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -50,7 +55,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+var stringOne="1999";
 
+Number(stringOne);
 
 
 /*
@@ -65,7 +72,7 @@ Do the following:
 function multiply(a,b){
 return a*b;
   }
-console.log(multiply(a,b));
+console.log(multiply(5,4));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -78,10 +85,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(y){
+   return y*7;
 }
-
+console.log(dogYears(6.5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
